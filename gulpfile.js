@@ -7,7 +7,7 @@ var reload=sync.reload;
 
 gulp.task('scripts',function(){
 console.log("working");
-gulp.src(['app/js/**/*.js','!app/js/**/*.min.js'])
+gulp.src(['app/js/**/*.js','app/js/**/*.min.js'])
     .pipe(rename({suffix:'.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))

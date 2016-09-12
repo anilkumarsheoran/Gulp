@@ -1,0 +1,1 @@
+console.log("first line"),console.log("second line"),console.log("third line"),console.log("forth last then line"),console.log("fifth last then line"),console.log("fifth last then line");
