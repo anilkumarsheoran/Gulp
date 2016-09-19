@@ -1,0 +1,32 @@
+.p1{
+	color:red;
+	bgcolor:blue;
+}
+
+
+@mixin firstmixin(){
+	color:blue;
+}
+
+.p2{
+	@include firstmixin
+}
+
+.bordergeneric {
+	border:2px solid black;
+	padding: 10px;
+}
+
+.p3{
+	@extend .bordergeneric;
+	color:yellow;
+}
+.p4{
+	@extend .bordergeneric;
+	@include firstmixin
+
+}
+.p5{
+	width: 500px/900px *100%;
+	@extend .bordergeneric;
+}
